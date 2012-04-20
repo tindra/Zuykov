@@ -15,6 +15,8 @@
 	<meta name="google-site-verification" content="">
 	<link rel="shortcut icon" href="../i/favicon.ico">
 	<link rel="stylesheet" href="../css/zuykov.css">
+	<!-- Add fancyBox -->
+    <link rel="stylesheet" href="../js/fancybox/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen">
 	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
 	<script src="../js/modernizr-1.7.min.js"></script>
 </head>
@@ -29,8 +31,7 @@
             	</div>
             	<div class="col_r">
                     <p><span class="phone">8-800-700-16-37</span><br><span class="phone-comm">(Звонки по&nbsp;России бесплатно)</span></p>
-                    <p><span class="phone">8-495-775-16-37</span></p>
-                    <address><a href="mailto:info@zuykov.ru">info@zuykov.ru</a></address>
+                    <p><span class="phone">8-495-775-16-37</span><br><span class="email"></span></p>
                 </div>
             </div>
 
@@ -117,7 +118,7 @@
 
             	<div class="col_l">
             	    <section class="work">
-            	       <h2 class="title work-title">В делопроизводстве на 21 марта 2012</h2>
+            	       <h2 class="title work-title">В делопроизводстве<br> на 21 марта 2012</h2>
             	       <article class="work-item">
             	           <h3 class="work-item-title">Регистрация товарных знаков (заявки на объекты интеллектуальной собственности)</h3>
             	           <footer class="work-item-num">685 дел</footer>
@@ -158,7 +159,7 @@
 
             	<div class="col_r">
             	    <section class="service">
-            	       <p><a href="" class="service-calc">Расчет стоимости услуг</a></p>
+            	       <p><a href="">Расчет стоимости услуг</a></p>
             	       <p><a href="">Заявка на регистрацию товарного знака</a></p>
             	       <p><a href="">Задать вопрос</a></p>
             	    </section>
@@ -166,27 +167,47 @@
             	    <section class="news">
             	       <h2 class="title news-title">Новости</h2>
             	       <ul class="filter">
-            	           <li class="filter-item filter-item_act"><span class="filter-item-txt">Рынок</span></li>
+            	           <li class="filter-item filter-item_act"><a href=""><span class="filter-item-txt">Рынок</span></a></li>
             	           <li class="filter-item"><a href=""><span class="filter-item-txt">Компания</span></a></li>
             	       </ul>
             	       
-            	       <article class="news-item">
-            	           <h3 class="news-item-title"><a href="news-item.html">Новость с&nbsp;анонсом проводимого 26&nbsp;апреля семинара, содержащая подробности мероприятия</a></h3>
-            	           <footer class="news-item-date">13 марта</footer>
-            	       </article>
+            	       <div lcass="filter-container">
+                	       <div class="news-items">
+                    	       <article class="news-item">
+                    	           <h3 class="news-item-title"><a href="news-item.html">Новость с&nbsp;анонсом проводимого 26&nbsp;апреля семинара, содержащая подробности мероприятия</a></h3>
+                    	           <footer class="news-item-date">13 марта</footer>
+                    	       </article>
 
-            	       <article class="news-item">
-            	           <h3 class="news-item-title"><a href="news-item.html">Yahoo разочаровала своим иском Facebook&nbsp;&mdash; патентные споры</a></h3>
-            	           <footer class="news-item-date">5 марта</footer>
-            	       </article>
+                    	       <article class="news-item">
+                    	           <h3 class="news-item-title"><a href="news-item.html">Yahoo разочаровала своим иском Facebook&nbsp;&mdash; патентные споры</a></h3>
+                    	           <footer class="news-item-date">5 марта</footer>
+                    	       </article>
 
-            	       <article class="news-item">
-            	           <h3 class="news-item-title"><a href="news-item.html">ФАС оштрафовала компанию за&nbsp;незаконное приобретение и&nbsp;использование товарного знака</a></h3>
-            	           <footer class="news-item-date">1 марта</footer>
-            	       </article>
+                    	       <article class="news-item">
+                    	           <h3 class="news-item-title"><a href="news-item.html">ФАС оштрафовала компанию за&nbsp;незаконное приобретение и&nbsp;использование товарного знака</a></h3>
+                    	           <footer class="news-item-date">1 марта</footer>
+                    	       </article>
+                           </div>
 
+                	       <div class="news-items" style="display:none;">
+                    	       <article class="news-item">
+                    	           <h3 class="news-item-title"><a href="news-item.html">Новость с&nbsp;анонсом проводимого 26&nbsp;апреля семинара</a></h3>
+                    	           <footer class="news-item-date">13 марта</footer>
+                    	       </article>
+
+                    	       <article class="news-item">
+                    	           <h3 class="news-item-title"><a href="news-item.html">Yahoo разочаровала своим иском Facebook&nbsp;&mdash; патентные споры</a></h3>
+                    	           <footer class="news-item-date">5 марта</footer>
+                    	       </article>
+
+                    	       <article class="news-item">
+                    	           <h3 class="news-item-title"><a href="news-item.html">ФАС оштрафовала компанию за&nbsp;незаконное приобретение и&nbsp;использование товарного знака</a></h3>
+                    	           <footer class="news-item-date">1 марта</footer>
+                    	       </article>
+                           </div>
+                       </div>
                	       <section class="social_news">
-               	           <h2 class="title social_news-title">Наши новости в&nbsp;социальных сетях:</h2>
+               	           <h2 class="title social_news-title">Наши новости<br> в&nbsp;социальных сетях:</h2>
                    	       <ul class="social_news-items">
                    	           <li class="social_news-item"><a href=""><img src="../i/icon-vk.png" alt="Вконтакте"></a></li>
                    	           <li class="social_news-item"><a href=""><img src="../i/icon-fb.png" alt="Facebook"></a></li>
@@ -204,37 +225,36 @@
                 <h2 class="title membership-title">Членство в международных организациях</h2>
                 <ul class="membership-items">
                     <li class="membership-item">
-                        <a href="http://www.inta.org" class="membership-link"><img src="../i/membership/inta.png" alt="INTA"><br>International Trademark Association</a><br><a href="">Сертификат</a>
+                        <a href="http://www.inta.org" class="membership-link" target="blank"><img src="../i/membership/inta.png" alt="INTA"><br>International Trademark Association</a><br><a href="../i/certificates/inta.jpg" class="fancybox" rel="group">Сертификат</a>
                     </li>
                     <li class="membership-item">
-                        <a href="#" class="membership-link"><img src="../i/membership/aipla.png" alt="AIPLA"><br>American Intellectual Property Law Association</a>
+                        <a href="http://www.aipla.org/Pages/default.aspx" class="membership-link" target="blank"><img src="../i/membership/aipla.png" alt="AIPLA"><br>American Intellectual Property Law Association</a>
                     </li>
                     <li class="membership-item">
-                        <a href="#" class="membership-link"><img src="../i/membership/autm.png" alt="AUTM"><br>Association of University Technology Managers</a>
+                        <a href="http://www.autm.net/Home.htm" class="membership-link" target="blank"><img src="../i/membership/autm.png" alt="AUTM"><br>Association of University Technology Managers</a>
                     </li>
                     <li class="membership-item">
-                        <a href="#" class="membership-link"><img src="../i/membership/ecta.png" alt="ECTA"><br>European Community Trademark Association</a>
+                        <a href="http://www.ecta.org/" class="membership-link" target="blank"><img src="../i/membership/ecta.png" alt="ECTA"><br>European Community Trademark Association</a>
                     </li>
                     <li class="membership-item">
-                        <a href="#" class="membership-link"><img src="../i/membership/Marques.png" alt="Marques"><br>The Association of European Marks Owners</a>
+                        <a href="http://www.americanbar.org/groups/cle/upcoming_events/national_institutes.html" class="membership-link" target="blank"><img src="../i/membership/Marques.png" alt="Marques"><br>The Association of European Marks Owners</a>
                     </li>
                     <li class="membership-item">
-                        <a href="#" class="membership-link"><img src="../i/membership/iapi.png" alt="IAPI"><br>International Association for the Protection of Intellectual property</a>
+                        <a href="https://www.aippi.org/?sel=contact" class="membership-link" target="blank"><img src="../i/membership/iapi.png" alt="IAPI"><br>International Association for the Protection of Intellectual property</a>
                     </li>
                     <li class="membership-item">
-                        <a href="#" class="membership-link"><img src="../i/membership/ptmg.png" alt="PTMG"><br>Pharmaceutical Trade Marks Group</a>
+                        <a href="http://www.ptmg.org/" class="membership-link" target="blank"><img src="../i/membership/ptmg.png" alt="PTMG"><br>Pharmaceutical Trade Marks Group</a>
                     </li>
                     <li class="membership-item">
-                        <a href="#" class="membership-link"><img src="../i/membership/ficpi.png" alt="FICPI"><br>International Federation of Intellectual Property Attorneys</a>
+                        <a href="http://www.ficpi.org/index.htm" class="membership-link" target="blank"><img src="../i/membership/ficpi.png" alt="FICPI"><br>International Federation of Intellectual Property Attorneys</a>
                     </li>
                     <li class="membership-item">
-                        <a href="#" class="membership-link"><img src="../i/membership/aba.png" alt="ABA"><br>American BAR Association</a>
+                        <a href="http://www.americanbar.org/aba.html" class="membership-link" target="blank"><img src="../i/membership/aba.png" alt="ABA"><br>American BAR Association</a>
                     </li>
                     <li class="membership-item">
-                        <a href="#" class="membership-link"><img src="../i/membership/itma.png" alt="ITMA"><br>The Institute of Trade Mark Attorneys</a>
+                        <a href="http://www.itma.org.uk/" class="membership-link" target="blank"><img src="../i/membership/itma.png" alt="ITMA"><br>The Institute of Trade Mark Attorneys</a>
                     </li>
                 </ul>
-
             </section>
         </div><!-- /Page content -->
     </div><!-- /Page -->
@@ -263,9 +283,24 @@
 
 <!-- here comes the javascript -->
 
-<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src='../js/jquery-1.5.1.min.js'>\x3C/script>")</script>
+<!-- Add jQuery library -->
+<script src="../js/jquery-1.7.2.min.js"></script>
+<script src="../js/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox -->
+<script src="../js/fancybox/jquery.fancybox.pack.js?v=2.0.6"></script>
+<script>
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+
+        //Tabs
+		$(".filter a").click(function() {
+			$(this).parent().siblings().removeClass('filter-item_act').end().addClass('filter-item_act');
+			$(this).parents('.filter').next().children().hide().eq( $(this).parent().index() ).show();
+			return false;
+		});
+	});
+</script>
+
 
 <!-- Asynchronous google analytics; this is the official snippet.
 	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
