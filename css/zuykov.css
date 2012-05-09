@@ -37,6 +37,9 @@ hr {width:100%; overflow:hidden; height:0; margin:0; padding:0; line-height:0; f
 .page-header p, .page-header address {font-size:13px; line-height:120%; margin:10px 0 12px;}
 .page-header .email {margin:2px 0 15px; text-indent:-9999em; background:url(../i/email.png) 0 0 no-repeat; width:88px; height:12px; display:block; float:right;}
 
+/* Email */
+.email_2 {margin:0; text-indent:-9999em; background:url(../i/email-white.png) 0 0 no-repeat; width:96px; height:14px; display:-moz-inline-stack; display:inline-block; *display:inline; *zoom:1; vertical-align:middle;}
+
 /* Phone */
 .phone {font:17px/1 Arial, sans-serif;}
 .phone-comm {font-size:13px; font-style:italic; color:#333;}
@@ -123,6 +126,20 @@ hr {width:100%; overflow:hidden; height:0; margin:0; padding:0; line-height:0; f
 /* =Content
 ----------------------------------------------- */
 .page-content {padding-bottom:174px; margin-top:-19px; *zoom:1;}
+.content {
+    padding:22px 23px 82px;
+    margin-bottom:8px;
+    border:1px solid #ccc;
+    background:#fff;
+    position:relative;
+    *zoom:1;
+    -webkit-box-shadow:0 4px 4px rgba(102,102,102,0.65);
+    -moz-box-shadow:0 4px 4px rgba(102,102,102,0.65);
+    box-shadow:0 4px 4px rgba(102,102,102,0.65);
+    behavior:url(../css/PIE.htc); 
+}
+.content li {position:relative; *zoom:1; background:url(../i/bullet.gif) 0 3px no-repeat;}
+.ie6 .content {behavior:none;}
 
 /* Columns */
 .columns {padding:0 212px; *zoom:1;}
@@ -205,20 +222,6 @@ hr {width:100%; overflow:hidden; height:0; margin:0; padding:0; line-height:0; f
 .social_news-item {float:left; margin:7px;}
 
 /* Entry */
-.content {
-    padding:22px 23px 82px;
-    margin-bottom:8px;
-    border:1px solid #ccc;
-    background:#fff;
-    position:relative;
-    *zoom:1;
-    -webkit-box-shadow:0 4px 4px rgba(102,102,102,0.65);
-    -moz-box-shadow:0 4px 4px rgba(102,102,102,0.65);
-    box-shadow:0 4px 4px rgba(102,102,102,0.65);
-    behavior:url(../css/PIE.htc); 
-}
-.ie6 .content {behavior:none;}
-.content li {position:relative; *zoom:1; background:url(../i/bullet.gif) 0 3px no-repeat;}
 .entry h2, .entry h3 {text-align:center;}
 .entry h2 {font-size:16px; line-height:110%; margin:0 0 18px;}
 .entry h3 {font-size:15px; line-height:120%; margin:35px 0 11px;}
@@ -227,6 +230,7 @@ hr {width:100%; overflow:hidden; height:0; margin:0; padding:0; line-height:0; f
 .entry li {padding-left:23px; margin-bottom:12px;}
 .entry .entry-title {font-size:20px; margin:0 0 16px;}
 .entry .entry-sectitle {font-size:16px; line-height:110%; margin:35px 0 18px;}
+.entry .entry-subtitle {font-size:13px; line-height:110%; margin:-15px 0 18px; color:#828282; text-align:center;}
 
 /* Crumbs */
 .crumbs {text-align:center; margin-bottom:11px !important; line-height:18px;}
@@ -251,6 +255,7 @@ hr {width:100%; overflow:hidden; height:0; margin:0; padding:0; line-height:0; f
 /* Info */
 .info {border:1px solid #ccc; padding:8px 20px 7px; margin:31px -8px 26px; *zoom:1; font-size:13px; line-height:120%; color:#444;}
 .info-title {color:#930; margin:0 0 14px !important; font-size:14px !important;}
+.info h4 {margin:28px 0 14px !important; font-size:14px !important;}
 .info ul {margin-bottom:14px;}
 .info li {margin:0 0 4px; padding-left:19px; background-position:0 3px;}
 .info p {margin:0 0 15px;}
@@ -272,17 +277,18 @@ hr {width:100%; overflow:hidden; height:0; margin:0; padding:0; line-height:0; f
 
 /* Price */
 .price {border-top:1px solid #898989; margin:-5px 0 33px;}
-.price-item {overflow:hidden; *zoom:1; border-top:1px solid #999; line-height:120%; font-size:13px; padding:6px 125px 7px 3px;}
+.price-item {overflow:hidden; *zoom:1; border-top:1px solid #999; line-height:120%; font-size:13px; padding:6px 153px 7px 3px;}
 .price-item-cnt {float:left;}
 .price-item-cnt p {margin:0 0 5px;}
 .price-item-title {margin-bottom:4px;}
-.price .params {float:right; clear:right; width:117px; margin:0 -122px 7px 0; padding:0; border:0; text-align:right;}
+.price .params {float:right; clear:right; width:145px; margin:0 -150px 7px 0; padding:0; border:0; text-align:right;}
 .price .params-item {margin:1px 0 7px; overflow:visible;}
 .price .params-item-label, .price .params-item-value {float:none; padding:0; width:auto;}
 .price .params-item-label {font-size:12px;}
 .price .params-item-value {font-size:14px; margin-top:-2px;}
 .price-item_stop {color:#900;}
 .price-item_stop a {color:#666;}
+.price-item_notes {padding-right:3px;}
 
 /* Params */
 .params {margin:22px 0; padding-bottom:15px; border-bottom:2px solid #898989;}
@@ -300,3 +306,21 @@ hr {width:100%; overflow:hidden; height:0; margin:0; padding:0; line-height:0; f
 .servicies-item-title {font-size:18px; margin:8px 0 15px;}
 .servicies-item ul {margin:0 0 23px;}
 .servicies-item li {margin:0 0 4px 6px; padding-left:21px;}
+
+/* Staff */
+.staff-items {margin:0 -10px;}
+.staff-item {display:-moz-inline-stack; display:inline-block; *display:inline; *zoom:1; vertical-align:top; text-align:center; width:148px; margin:10px 10px 20px;}
+.staff-item img {margin-bottom:8px;}
+.staff-item-title {margin-bottom:4px;}
+.staff-item-txt {font-size:12px; line-height:120%; color:#828282;}
+
+/* Docs */
+.docs-item {border: 1px solid #ccc; border-width:1px 0; padding: 12px 0; margin:0 0 -1px !important;}
+.docs-item-links {margin-right:10px;}
+.docs img {display:inline; vertical-align:middle; margin-right:4px; position:relative;}
+
+/* Contacts */
+.contacts-txt {margin-right:-10px;}
+.contacts-txt p {display:-moz-inline-stack; display:inline-block; *display:inline; *zoom:1; vertical-align:top; width:49%; line-height:140%;}
+.contacts-txt p.web {position:relative; left:2%;}
+.contacts .map {height:300px; width:100%; margin:34px 0 0;}
