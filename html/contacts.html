@@ -10,20 +10,35 @@
 	<meta charset="utf-8">
 	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Главная</title>
+	<title>Контакты</title>
 	<meta name="description" content="">
 	<meta name="google-site-verification" content="">
 	<link rel="shortcut icon" href="../i/favicon.ico">
 	<link rel="stylesheet" href="../css/zuykov.css">
-    <!-- Add fancyBox -->
+	<!-- Add fancyBox -->
     <link rel="stylesheet" href="../js/fancybox/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen">
 	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
 	<script src="../js/modernizr-1.7.min.js"></script>
+    <script src="http://api-maps.yandex.ru/1.0/?key=ABge5EkBAAAA2Mq8JAIAgHyAKdd0l4UJpioPtQw_6fjVjI0AAAAAAAAAAACovo9iJbyJkgNlskqDMsAga7P3Yg=="></script>
+    <script type="text/javascript">
+    		 var map;
+    		 function init () {
+    		   map = new YMaps.Map( document.getElementById("YMapsID") );
+    		   map.setCenter(new YMaps.GeoPoint(37.64,55.777 ), 15, 
+    				  YMaps.MapType.MAP);
+    		  var content = document.createElement('span');
+          content.innerHTML = "<image src='logo.gif'></img>";
+          map.addControl(new YMaps.ScaleLine());
+          map.addControl(new YMaps.Zoom());
+          map.addControl(new YMaps.TypeControl());
+          map.openBalloon(new YMaps.GeoPoint(37.640246, 55.776801), content,{hasCloseButton: false});
+    		 };
+    </script>
 </head>
 <body>
     <div class="page">
         <header class="page-header" role="banner">
-            <div class="page-header-logo"><img src="../i/logo.jpg" alt=""></div>
+            <div class="page-header-logo"><a href="index.html"><img src="../i/logo.jpg" alt=""></a></div>
             <div class="clearfix">
             	<div class="col_l">
             	    <h1 class="page-header-title">OOO &laquo;Зуйков и&nbsp;партнёры&raquo; <sup class="reg">&reg;</sup></h1>
@@ -45,13 +60,13 @@
                     <li class="nav_sub-item"><a href="form.html">Формы</a></li>
                     <li class="nav_sub-item"><a href="">Статьи</a></li>
                     <li class="nav_sub-item"><a href="news.html">Новости</a></li>
-                    <li class="nav_sub-item"><a href="contacts.html">Контакты</a></li>
+                    <li class="nav_sub-item nav_sub-item_act">Контакты</li>
                 </ul>
             </nav>
 
             <nav class="nav" role="navigation">
                 <ul class="nav-items">
-                    <li class="nav-item nav-item_fst"><a href="trademarks.html"><span class="nav-item-txt">Товарные знаки</span></a></li><li class="nav-item"><a href="patents.html"><span class="nav-item-txt">Патенты</span></a></li><li class="nav-item"><a href=""><span class="nav-item-txt">Договоры</span></a></li><li class="nav-item"><a href=""><span class="nav-item-txt">Программы для ЭВМ</span></a></li><li class="nav-item"><a href=""><span class="nav-item-txt">Авторское право</span></a></li><li class="nav-item nav-item_lst"><a href=""><span class="nav-item-txt">Суды/ФАС</span></a></li>
+                    <li class="nav-item nav-item_fst"><a href=""><span class="nav-item-txt">Товарные знаки</span></a></li><li class="nav-item"><a href="patents.html"><span class="nav-item-txt">Патенты</span></a></li><li class="nav-item"><a href=""><span class="nav-item-txt">Договоры</span></a></li><li class="nav-item"><a href=""><span class="nav-item-txt">Программы для ЭВМ</span></a></li><li class="nav-item"><a href=""><span class="nav-item-txt">Авторское право</span></a></li><li class="nav-item nav-item_lst"><a href=""><span class="nav-item-txt">Суды/ФАС</span></a></li>
                 </ul>
             </nav>
         </header><!-- /Page header -->
@@ -63,35 +78,28 @@
             	<div class="col_c">
             	    <div class="content" role="main">
                 	    <article class="entry">
-             	           <h2>Регистрация и&nbsp;защита прав на&nbsp;объекты интеллектуальной собственности на&nbsp;всей территории России, международная регистрация в&nbsp;любых странах мира</h2>
-             	           <figure class="object object_l">
-             	              <img src="../i/temp/a1.jpg" alt="">
-             	              <figcaption class="object-caption">Сергей Зубков</figcaption>
-             	           </figure>
-                           <p>Наша фирма оказывает широкий спектр услуг в&nbsp;узкой специализации Гражданского права по&nbsp;охране и&nbsp;защите прав на&nbsp;интеллектуальную собственность. Одно из&nbsp;успешных направлений нашей деятельности это решение вопросов, возникающих в&nbsp;спорах на&nbsp;товарные знаки, патенты, авторские права, а&nbsp;также на&nbsp;другие объекты прав интеллектуальной собственности.</p>
-                           <h3>Наша деятельность:</h3>
-                           <ul>
-                               <li>Постоянная судебная практика и&nbsp;работа в&nbsp;Палате по&nbsp;Патентным спорам Российской Федерации</li>
-                               <li>6&nbsp;патентных поверенных в&nbsp;штате, со&nbsp;свободным владением иностранными языками</li>
-                               <li>Постоянное сотрудничество с&nbsp;патентными поверенными из&nbsp;Европы, Азии, Китая, Америки, Казахстана, Украины, Белоруссии, и&nbsp;стран Балтии</li>
-                               <li>Членство в&nbsp;Международной ассоциации патентных поверенных (INTA)</li>
-                               <li>Представление интересов клиентов в&nbsp;административных и&nbsp;судебных органах</li>
-                               <li>Оперативное оповещение наших клиентов о&nbsp;ходе регистрационного процесса объектов прав интеллектуальной собственности</li>
-                               <li>Консультации и&nbsp;помощь в&nbsp;составлении и&nbsp;проведении договоров на&nbsp;регистрации, уступки, передаче прав на&nbsp;объекты интеллектуальной собственности</li>
-                               <li>Защита товарных знаков, полезных моделей, изобретений, промышленных образцов и&nbsp;другой интеллектуальной собственности</li>
-                           </ul>
-                           <p>Отличие нашей компании от&nbsp;других фирм, работающих на&nbsp;этом рынке в&nbsp;том, что наши знания, практический опыт и&nbsp;нестандартное мышление нашего руководства поможет превратить вашу мечту в&nbsp;реальность. И&nbsp;это не&nbsp;просто слова это видно по&nbsp;результатам нашей деятельности.</p>
+             	           <h2 class="entry-title">Наши контакты</h2>
+           	               <div class="contacts">
+           	                   <p><img src="http://www.zuykov.ru/images/contact.jpg" alt=""></p>
+           	                   <div class="contacts-txt">
+               	                   <p>ООО "Зуйков и партнеры"<br>
+                                   РФ, 129090 Москва,<br>
+                                   Грохольский пер., д.28, 2-й этаж<br>
+                                   Для почты: 129110 Москва а.я. 165<br>
+                                   Зуйкову С.А.</p>
+               	                   <p class="web">Тел.Факс: +7(495) 775-16-37<br>
+                                   e-mail: <span class="email_2"></span><br>
+                                   сайт: <a href="http://www.zuykov.ru">www.zuykov.ru</a></p>
+                               </div>
+                               <div id="YMapsID" class="map"></div>
+                           </div>
+
                 	    </article><!-- /Entry -->
+                	    
                 	</div><!-- /Content -->
             	</div><!-- /Column Center -->	
 
             	<div class="col_l">
-            	    <article class="event">
-            	       <header class="event-meta">Семинар, 26 апреля</header>
-             	       <h2 class="title event-title"><a href="">Товарный знак как&nbsp;актив&nbsp;компании</a></h2>
-             	       <p>Вход свободный, приглашаются все желающие, разбор реальных случаев из&nbsp;жизни.</p>
-            	    </article>
-
             	    <section class="work">
             	       <h2 class="title work-title">В делопроизводстве<br> на 21 марта 2012</h2>
             	       <article class="work-item">
@@ -117,7 +125,7 @@
 
             	       <article class="work-item">
             	           <h3 class="work-item-title">Защита товарных знаков, патентов (судебные дела по интеллектуальной собственности)</h3>
-            	           <footer class="work-item-num">54 делa</footer>
+            	           <footer class="work-item-num">54 дела</footer>
             	       </article>
                    </section>
 
