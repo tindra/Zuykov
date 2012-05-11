@@ -10,7 +10,7 @@
 	<meta charset="utf-8">
 	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Патенты</title>
+	<title>Клиенты</title>
 	<meta name="description" content="">
 	<meta name="google-site-verification" content="">
 	<link rel="shortcut icon" href="../i/favicon.ico">
@@ -19,10 +19,25 @@
     <link rel="stylesheet" href="../js/fancybox/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen">
 	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
 	<script src="../js/modernizr-1.7.min.js"></script>
+    <script src="http://api-maps.yandex.ru/1.0/?key=ABge5EkBAAAA2Mq8JAIAgHyAKdd0l4UJpioPtQw_6fjVjI0AAAAAAAAAAACovo9iJbyJkgNlskqDMsAga7P3Yg=="></script>
+    <script type="text/javascript">
+    		 var map;
+    		 function init () {
+    		   map = new YMaps.Map( document.getElementById("YMapsID") );
+    		   map.setCenter(new YMaps.GeoPoint(37.64,55.777 ), 15, 
+    				  YMaps.MapType.MAP);
+    		  var content = document.createElement('span');
+          content.innerHTML = "<image src='logo.gif'></img>";
+          map.addControl(new YMaps.ScaleLine());
+          map.addControl(new YMaps.Zoom());
+          map.addControl(new YMaps.TypeControl());
+          map.openBalloon(new YMaps.GeoPoint(37.640246, 55.776801), content,{hasCloseButton: false});
+    		 };
+    </script>
 </head>
 <body>
     <div class="page">
-        <header class="page-header page-header_2" role="banner">
+        <header class="page-header page-header_3" role="banner">
             <div class="page-header-logo"><a href="index.html"><img src="../i/logo.jpg" alt=""></a></div>
             <div class="clearfix">
             	<div class="col_l">
@@ -41,17 +56,17 @@
                 <ul class="nav_sub-items">
                     <li class="nav_sub-item"><a href="">О компании</a></li>
                     <li class="nav_sub-item"><a href="sotrudniki.html">Сотрудники</a></li>
-                    <li class="nav_sub-item"><a href="clients.html">Клиенты</a></li>
+                    <li class="nav_sub-item nav_sub-item_act">Клиенты</li>
                     <li class="nav_sub-item"><a href="form.html">Формы</a></li>
                     <li class="nav_sub-item"><a href="">Статьи</a></li>
                     <li class="nav_sub-item"><a href="news.html">Новости</a></li>
-                    <li class="nav_sub-item"><a href="contacts.html">Контакты</a></li>
+                    <li class="nav_sub-item"><a href="contacts.hmtl">Контакты</a></li>
                 </ul>
             </nav>
 
             <nav class="nav" role="navigation">
                 <ul class="nav-items">
-                    <li class="nav-item nav-item_fst"><a href="tz2.html"><span class="nav-item-txt">Товарные знаки</span></a></li><li class="nav-item nav-item_act"><a href="patents.html"><span class="nav-item-txt">Патенты</span></a></li><li class="nav-item"><a href="dogovora.html"><span class="nav-item-txt">Договоры</span></a></li><li class="nav-item"><a href="evm.html"><span class="nav-item-txt">Программы для ЭВМ</span></a></li><li class="nav-item"><a href="ap2.html"><span class="nav-item-txt">Авторское право</span></a></li><li class="nav-item nav-item_lst"><a href="uu2.html"><span class="nav-item-txt">Суды/ФАС</span></a></li>
+                    <li class="nav-item nav-item_fst"><a href="tz2.html"><span class="nav-item-txt">Товарные знаки</span></a></li><li class="nav-item"><a href="patents.html"><span class="nav-item-txt">Патенты</span></a></li><li class="nav-item"><a href="dogovora.html"><span class="nav-item-txt">Договоры</span></a></li><li class="nav-item"><a href="evm.html"><span class="nav-item-txt">Программы для ЭВМ</span></a></li><li class="nav-item"><a href="ap2.html"><span class="nav-item-txt">Авторское право</span></a></li><li class="nav-item nav-item_lst"><a href="uu2.html"><span class="nav-item-txt">Суды/ФАС</span></a></li>
                 </ul>
             </nav>
         </header><!-- /Page header -->
@@ -62,73 +77,117 @@
         	<div class="columns clearfix">
             	<div class="col_c">
             	    <div class="content" role="main">
-            	        <p class="crumbs"><a href="patents.html">Патенты</a><!-- <span class="crumbs-dvd">&raquo;</span> <a href="">Изобретения</a>--></p>
                 	    <article class="entry">
-             	           <h2 class="entry-title">Патенты</h2>
-             	           <p>OOO &laquo;Зуйков и&nbsp;партнеры&raquo; регистрирует патенты на&nbsp;все территории&nbsp;РФ, а&nbsp;также производит международную регистрацию в&nbsp;любых странах мира.</p>
-                           <p>Сотрудничает с&nbsp;международными патентными организациями, обладает большим опытом в&nbsp;сфере регистрации и&nbsp;защиты патентного права.</p>
-                           <p>Готовность помочь консультативно и&nbsp;практически по&nbsp;любому вопросу.</p>
-                           
-                           <h3 class="entry-sectitle">Наиболее часто оказываемые нами услуги<br>по разным типам патентов</h3>
-                           
-                           <section class="servicies">
-                               <article class="servicies-item">
-                                   <h4 class="servicies-item-title"><a href="patents-inventions.html">Изобретения</a></h4>
-                                   <ul>
-                                       <li><a href="">Патентный поиск</a></li>
-                                       <li><a href="">Подготовка и&nbsp;подача заявки на&nbsp;получение патента</a></li>
-                                       <li><a href="">Подача международной заявки по&nbsp;процедуре ПиСиТи (PCT)</a></li>
-                                       <li><a href="">Подготовка и&nbsp;подача возражения в&nbsp;палату Роспатента на&nbsp;решение экспертизы</a></li>
-                                       <li><a href="">Подготовка и&nbsp;подача возражения против действия патента на&nbsp;изобретение</a></li>
-                                   </ul>
-                               </article>
-
-                               <article class="servicies-item">
-                                   <h4 class="servicies-item-title"><a href="patents-usefull.html">Полезные модели</a></h4>
-                                   <ul>
-                                       <li><a href="">Подготовка и&nbsp;подача заявки на&nbsp;получение патента на&nbsp;полезную модель</a></li>
-                                       <li><a href="">Патентный поиск</a></li>
-                                       <li><a href="">Подача международной заявки</a></li>
-                                       <li><a href="">Подготовка и&nbsp;подача возражения в&nbsp;палату Роспатента на&nbsp;решение экспертизы</a></li>
-                                       <li><a href="">Подготовка и&nbsp;подача возражения против действия патента на&nbsp;изобретение</a></li>
-                                   </ul>
-                               </article>
-
-                               <article class="servicies-item">
-                                   <h4 class="servicies-item-title"><a href="patents-industrial.html">Промышленные образцы</a></h4>
-                                   <ul>
-                                       <li><a href="">Патентный поиск</a></li>
-                                       <li><a href="">Подготовка и&nbsp;подача заявки на&nbsp;получение патента</a></li>
-                                       <li><a href="">Подготовка и&nbsp;подача возражения в&nbsp;палату Роспатента на&nbsp;решение экспертизы</a></li>
-                                       <li><a href="">Подготовка и&nbsp;подача возражения против действия патента на&nbsp;промобразец</a></li>
-                                   </ul>
-                               </article>
-                           </section>
-                           
-                           <!--<p>Еще какая-то дополнительная справочная информация, если в ней есть необходимость.</p>-->
-
+             	           <h2 class="entry-title">Наши клиенты</h2>
+           	               <div class="clients clients_all">
+           	                   <ul class="clients-items">
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/155.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/bsht.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/mar.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/mdf.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/dinamo.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/vitek.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="../i/clients/bilan.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/got.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/slz.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/kk.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/sr.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/dw.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="../i/clients/eldo.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/bru.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/at.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/eks.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/era.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/ed.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/put.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/bon.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/et.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/gt.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/gek.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/oz.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/sk.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/sf.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/sca.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/vv.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/sib.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/ge.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/it.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/sem.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/atm.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/vig.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/ov.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/com.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/de.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/bi.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/rek.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/wol.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/sm.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/pra.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/med.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/ber.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/blu.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/bt.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/bimix.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/im.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/bebi.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/vit.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/pla.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/bra.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/mom.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/ron.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/sup.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/zst.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/uli.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/tro.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/but.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/aiw.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/max.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/sos.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/alf.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/stom.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/modi.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/ide.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/ken.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/calv.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/cha.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/ele.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/glon.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/medii.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/nov.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/rosen.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/shsh.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/uni.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/vass.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/vega.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/crat.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/ekg.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/coram.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/chsos.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/rosst.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/mido.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/ipat.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/esth.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/rolsen.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/ekst.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/braun.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/era2.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/invi.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/reim.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/stei.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/xcub.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/narm.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/3lns.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/kelt.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/storm.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/zeon.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/kalen.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/norm.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/grei.jpg" alt=""></li>
+                                   <li class="clients-item"><img src="http://www.zuykov.ru/images/k/bukv.jpg" alt=""></li>
+                               </ul>
+                           </div>
                 	    </article><!-- /Entry -->
                 	    
-                        <!--
-                        <section class="optional">
-                            <h4 class="title_t2 optional-title">Смежные услуги</h4>
-                            <ul>
-                                <li><a href="">Поиск сходных изобразительных товарных знаков до 5-и классов (зарегистрированные знаки и заявки)</a></li>
-                                <li><a href="">Ускорение получения свидетельства 4-5 мес.</a></li>
-                                <li><a href="">Разработка словесного товарного знака</a></li>
-                            </ul>
-                        </section>
-
-                        <section class="optional">
-                            <h4 class="title_t2 optional-title">Полезная информация</h4>
-                            <ul>
-                                <li><a href="">Различия в&nbsp;законодательстве по&nbsp;регистрации товарных знаков в&nbsp;РФ, Европе и&nbsp;Америке</a></li>
-                                <li><a href="">Что делать, если ваш знак не&nbsp;уникален</a></li>
-                                <li><a href="">Как разработать успешный товарный знак</a></li>
-                                <li><a href="">Когда надо задуматься об&nbsp;обязательной регистрации своего товарного знака (для начнающих)</a></li>
-                            </ul>
-                        </section>
-                    -->
                 	</div><!-- /Content -->
             	</div><!-- /Column Center -->	
 
@@ -314,7 +373,6 @@
 		});
 	});
 </script>
-
 
 <!-- Asynchronous google analytics; this is the official snippet.
 	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.

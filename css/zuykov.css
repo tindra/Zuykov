@@ -28,6 +28,8 @@ hr {width:100%; overflow:hidden; height:0; margin:0; padding:0; line-height:0; f
 /* =Header
 ----------------------------------------------- */
 .page-header {position:relative; background-image:url(../i/page-img.jpg); background-position:0 100%; background-repeat:no-repeat; padding-bottom:215px;}
+.page-header_2 {background-image:url(../i/page-img-2.jpg);}
+.page-header_3 {background-image:url(../i/page-img-3.jpg);}
 .page-header-logo {display:block; position:absolute; left:50%; top:10px; margin-left:-47px; width:95px; height:70px;}
 .page-header .col_l, .page-header .col_r {width:300px;}
 .page-header .col_l {padding-left:35px; float:left;}
@@ -177,6 +179,10 @@ hr {width:100%; overflow:hidden; height:0; margin:0; padding:0; line-height:0; f
 .clients-title {margin-bottom:8px;}
 .clients-items {border:1px solid #bcbcbc; width:162px; padding:10px 0; margin-bottom:9px;}
 .clients-items img {display:block; margin:0 auto;}
+.clients_all {background:#f5f5f5; margin:0 -23px -82px;}
+.clients_all .clients-items {border:0; width:auto; padding:0; margin:0; text-align:center;}
+.clients_all .clients-item {width:130px; margin:15px !important; display:-moz-inline-stack; display:inline-block; *display:inline; *zoom:1; vertical-align:top; padding:0 !important; background:none !important;}
+.clients_all .clients-item img {width:130px;}
 
 /* Service */
 .service {margin:-7px 0 30px;}
